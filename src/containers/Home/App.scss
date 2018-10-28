@@ -1,0 +1,23 @@
+.home{
+.user-list{
+    .ant-list{
+        &.ant-list-split{
+             &.ant-list-bordered{
+                 .ant-list-header{
+                     div{
+                         display: flex;
+                         justify-content: space-between;
+                     }
+                 }
+                 .ant-list-item{
+                    .ant-list-item-content{
+                        flex: auto;
+                    }
+                 }
+             }
+
+        } 
+
+    } 
+}
+}

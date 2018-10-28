@@ -1,0 +1,16 @@
+.main-layout {
+  height: 100%;
+  .main-header {
+    background: black;
+    padding: 0 30px;
+    height: 54px;
+    line-height: 54px;
+  }
+  .main-footer {
+    text-align: center;
+    padding: 10px;
+  }
+  .ant-card-body {
+    padding: 15px !important;
+  }
+}

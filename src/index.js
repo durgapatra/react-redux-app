@@ -1,15 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { render } from 'react-dom'
+import Router from './router';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import reducer from './reducers'
-let store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
-ReactDOM.render(
-    < Provider store={store} >
-        <App />
+import { BrowserRouter } from 'react-router-dom'
+import reducer from './redux/reducers/stroe'
+import 'antd/dist/antd.css';
+render(
+    < Provider store={reducer} >
+        <BrowserRouter>
+            <Router />
+        </BrowserRouter>
     </Provider >
     , document.getElementById('root'));
 

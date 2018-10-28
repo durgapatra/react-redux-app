@@ -1,0 +1,8 @@
+.my-header{
+    &.ant-layout-header{
+        display: flex;
+        justify-content: flex-end;
+        color: #fff;
+        cursor: pointer;
+    }
+}
