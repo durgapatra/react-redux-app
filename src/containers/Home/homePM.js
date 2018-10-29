@@ -14,11 +14,10 @@ class HomePM {
         this.props.handleCheckrdPeople(e.target.value, e.target.checked)
     }
     handleAddNewUser = () => {
-        console.log(this.props)
         let data = {
-            name: this.name.current.value,
-            id: this.id.current.value,
-            Description: this.description.current.value
+            name: this.name.current.input.value,
+            id: this.id.current.input.value,
+            Description: this.description.current.textAreaRef.value
         }
         if (data.name && data.id && data.Description) {
             this.props.addNewPeople(data)
