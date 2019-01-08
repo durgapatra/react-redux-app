@@ -1,8 +1,18 @@
 .my-header{
+
     &.ant-layout-header{
         display: flex;
         justify-content: flex-end;
         color: #fff;
         cursor: pointer;
+        &.light{
+            background-color: #fff;
+           span{
+            color: #000c17
+            }
+        }
+        &.dark{
+            background-color: #1890ff;
+        }
     }
 }
